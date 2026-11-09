@@ -1,0 +1,157 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;/*テキスト・画像の縦方向の揃え位置を指定(親要素のベースラインに揃える)*/
+    background:transparent;/*透明*/
+    box-sizing: border-box;/*ボックスサイズ(width, height) の算出方法を指定(padding と border の幅を要素の幅と高さに含める.)*/
+}
+
+body {
+    line-height:1;
+}
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;/*リストに付加するマークに対して、関連するプロパティ(「種類、画像、配置位置」)をまとめて指定(なし)*/
+}
+
+blockquote, q {
+    quotes:none;/*contentプロパティで挿入する記号を指定する(なし)*/
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/*hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}*/
+
+  input, select {
+    vertical-align:middle;
+}
+
+/*PCスマホ表示なし*/
+.pc { display:block; }
+.sumaho { display:none; }
+@media screen and (max-width:767px){
+	.pc { display:none; }
+	.sumaho { display:block; }
+}
+
+/*配置*/
+.fl { float:left; }
+.fr { float:right; }
+
+@media screen and (max-width:767px){
+.fl_sp { float:left; }
+.fr_sp { float:right; }
+}
+
+
+
+/*下部*/
+.pd30 {
+	padding-bottom:30px;
+}
+
+/*width*/
+.w50p { width:50%;}
+.w80 { width:80px;}
+.w104 { width:104px;}
+.w170 { width:170px;}
+.w180 { width:180px;}
+.w195 { width:195px;}
+.w200 { width:200px;}
+.w220 { width:220px;}
+.w230 { width:230px; margin:0 auto;}
+.w240 { width:240px;}
+.w250 { width:250px;}
+.w280 { width:280px !important;}
+.w300 { width:300px;}
+.w320 { width:320px !important;}
+.w330 { width:330px !important;}
+.w350 { width:350px;}
+.w370 { width:370px;}
+.w380 { width:380px !important;}
+.w420 { width:420px;}
+.w430 { width:430px;}
+.w450 { width:450px;}
+.w480 { width:480px;}
+.w500 { width:500px;}
+.w510 { width:510px;}
+.w515 { width:515px;}
+.w521 { width:521px; margin:0 auto;}
+.w558 { width:558px; margin:0 auto;}
+.w566 { width:566px; margin:0 auto;}
+.w580 { width:580px;}
+.w690 { width:690px;}
+.w600 { width:600px;}
+.w615 { width:615px;}
+.w740 { width:740px; margin:0 auto;}
+@media screen and (max-width: 767px){
+    .w50p , .w80 , .w104, .w170 ,.w180 , .w200 , .w220,.w230 ,.w240,.w250 , .w280 , .w300 , .w320 , .w330 , .w350 , .w370, .w380 , .w420 , .w430 , .w450 , .w480, .w500, .w510 , .w515 ,.w521, .w558, .w566, .w580 , .w690 , .w600 , .w615 , .w740 { width:100% !important; margin:0 auto;}
+
+}
+
